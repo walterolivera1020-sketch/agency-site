@@ -96,7 +96,7 @@ section[id] {
   background-image:
     linear-gradient(90deg, rgba(19, 10, 7, 0.92) 0%, rgba(39, 22, 16, 0.82) 35%, rgba(39, 22, 16, 0.48) 60%, rgba(39, 22, 16, 0.18) 100%),
     linear-gradient(180deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.18)),
-    url("../images/backgroundhero.png");
+    url("../images/BGC.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
