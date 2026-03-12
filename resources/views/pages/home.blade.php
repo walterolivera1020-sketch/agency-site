@@ -1,0 +1,17 @@
+@extends('layouts.app')
+
+@section('content')
+    @include('partials.preloader')
+    @include('partials.navbar')
+    @include('partials.mobile-menu')
+    @include('partials.hero')
+    @include('partials.stats')
+    @include('partials.about')
+    @include('partials.services')
+    @include('partials.jobs')
+    @include('partials.deployment')
+    @include('partials.why-us')
+    @include('partials.testimonials')
+    @include('partials.contact')
+    @include('partials.footer')
+@endsection

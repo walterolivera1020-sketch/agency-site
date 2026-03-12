@@ -153,4 +153,5 @@
                 <a href="#contact" class="btn-outline-dark inline-block">Send Your Resume</a>
             </div>
         </div>
-    </section><?php /**PATH C:\Users\user\agency-site\resources\views/partials/jobs.blade.php ENDPATH**/ ?>
+    </section>
+<?php /**PATH C:\Users\user\agency-site\resources\views/partials/jobs.blade.php ENDPATH**/ ?>

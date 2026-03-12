@@ -234,4 +234,5 @@
                     </path>
                 </svg>
             </div>
-    </section><?php /**PATH C:\Users\user\agency-site\resources\views/partials/deployment.blade.php ENDPATH**/ ?>
+    </section>
+<?php /**PATH C:\Users\user\agency-site\resources\views/partials/deployment.blade.php ENDPATH**/ ?>

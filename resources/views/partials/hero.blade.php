@@ -117,7 +117,7 @@
                 <div class="relative">
                     <!-- Main Image Card -->
                     <div class="hero-image">
-                        <img src="<?php echo e(asset('images/4people.png')); ?>" alt="Professional Filipino workers in a meeting"
+                        <img src="{{ asset('images/4people.png') }}" alt="Professional Filipino workers in a meeting"
                             class="w-full h-[400px] lg:h-[450px] object-cover">
                         <!-- Overlay Content -->
                         <div
@@ -177,4 +177,4 @@
                 </svg>
             </a>
         </div>
-</section><?php /**PATH C:\Users\user\agency-site\resources\views/partials/hero.blade.php ENDPATH**/ ?>
+</section>
