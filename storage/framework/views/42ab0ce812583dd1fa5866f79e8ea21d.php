@@ -22,7 +22,7 @@
                     class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(212,175,55,0.25)]">
 
                     <div class="overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1758520144437-f068ecaf0d83?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM1fHx8ZW58MHx8fHx8&ixlib=rb-4.1.0&q=60&w=3000"
+                        <img src="https://mariposainternational.com/wp-content/uploads/2025/06/wmremove-transformed-15-1024x683.jpeg"
                             class="w-full h-48 object-cover transition duration-700 group-hover:scale-110">
                     </div>
 
@@ -85,7 +85,7 @@
                     class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(212,175,55,0.25)]">
 
                     <div class="overflow-hidden">
-                        <img src="https://plus.unsplash.com/premium_photo-1763136099390-91f502621321?auto=format&fit=crop&w=3000&q=80"
+                        <img src="https://worldmissionmagazine.com/wp-content/uploads/2024/01/e5429f4864cf7d556660ffeee26ddea9.jpg"
                             class="w-full h-48 object-cover transition duration-700 group-hover:scale-110">
                     </div>
 
@@ -154,7 +154,7 @@
                     class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(212,175,55,0.25)]">
 
                     <div class="overflow-hidden">
-                        <img src="https://media.istockphoto.com/id/2193688586/photo/a-group-of-teenagers-sit-in-a-circle-with-a-teacher.jpg?s=612x612&w=0&k=20&c=tPc5JHc9KmV_F4VeZSygutHzux2zqel-rRRIF0gNlPY="
+                        <img src="https://www.dualtech.org.ph/wp-content/uploads/2024/03/Schneider-Training10-web-1280x853.jpg"
                             class="w-full h-48 object-cover transition duration-700 group-hover:scale-110">
                     </div>
 
@@ -185,7 +185,7 @@
                     class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(212,175,55,0.25)]">
 
                     <div class="overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkR8YJonA8i-5JR7dUEvQ4__bS5imurkvGMQ&s"
                             class="w-full h-48 object-cover transition duration-700 group-hover:scale-110">
                     </div>
 
@@ -215,7 +215,7 @@
                     class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(212,175,55,0.25)]">
 
                     <div class="overflow-hidden">
-                        <img src="https://plus.unsplash.com/premium_photo-1661722392275-6c201a3e12e7"
+                        <img src="https://www.beholdphilippines.com/wp-content/uploads/2025/05/ManatalDOTcom.jpg"
                             class="w-full h-48 object-cover transition duration-700 group-hover:scale-110">
                     </div>
 
@@ -246,7 +246,7 @@
                     class="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(212,175,55,0.25)]">
 
                     <div class="overflow-hidden">
-                        <img src="https://www.abetteranswer.com/hubfs/Customer%20Service_Greeting%20Customer-small.jpg"
+                        <img src="https://www.moneymax.ph/hs-fs/hubfs/assets_moneymax/Effective-Ways-to-Save-Money-as-an-OFW.jpg?width=480&height=320&name=Effective-Ways-to-Save-Money-as-an-OFW.jpg"
                             class="w-full h-48 object-cover transition duration-700 group-hover:scale-110">
                     </div>
 

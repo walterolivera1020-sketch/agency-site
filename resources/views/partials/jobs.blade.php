@@ -31,7 +31,7 @@
                 <div class="reveal job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
                     data-category="healthcare">
                     <div class="flex items-start justify-between mb-4">
-                        <img src="https://media.istockphoto.com/id/1446497053/photo/a-smiling-dentist-in-the-clinic-is-holding-medical-records-health-worker.jpg?s=612x612&w=0&k=20&c=bxdcOnSo68z0iWx0gP_gB_85p3nlkEtkUEe-PDu-rio="
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQod4bLXpxkIRT1M6CX8zA2E-B1Feyfv-kX1g&s"
                             alt="Healthcare professional" class="w-12 h-12 rounded-xl object-cover">
                         <span class="badge badge-teal">Healthcare</span>
                     </div>
@@ -51,7 +51,7 @@
                 <div class="reveal stagger-1 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
                     data-category="construction">
                     <div class="flex items-start justify-between mb-4">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        <img src="https://mindanews.com/wp-content/uploads/2017/09/06workers_web.jpg"
                             alt="Construction worker" class="w-12 h-12 rounded-xl object-cover">
                         <span class="badge badge-accent">Construction</span>
                     </div>
@@ -71,7 +71,7 @@
                 <div class="reveal stagger-2 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
                     data-category="construction">
                     <div class="flex items-start justify-between mb-4">
-                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        <img src="https://img.freepik.com/premium-photo/side-view-handsome-asian-electrician-repairing-electrical-box-with-pliers-corridor_697211-98.jpg?w=360"
                             alt="Electrician at work" class="w-12 h-12 rounded-xl object-cover">
                         <span class="badge badge-accent">Construction</span>
                     </div>
@@ -91,7 +91,7 @@
                 <div class="reveal stagger-3 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
                     data-category="it">
                     <div class="flex items-start justify-between mb-4">
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        <img src="https://mcvotalent.com/wp-content/uploads/2022/05/Network-Admin-2.jpg"
                             alt="IT support specialist" class="w-12 h-12 rounded-xl object-cover">
                         <span class="badge badge-primary">IT</span>
                     </div>
@@ -111,7 +111,7 @@
                 <div class="reveal stagger-4 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
                     data-category="professional">
                     <div class="flex items-start justify-between mb-4">
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                        <img src="https://www.ianfulgar.com/wp-content/uploads/2022/01/ian-fulgar-architect-how-to-be-an-architect-in-the-philippines-architect-drafting-building-plans-at-desk-1024x683.webp"
                             alt="Architectural draftsman" class="w-12 h-12 rounded-xl object-cover">
                         <span class="badge badge-success">Professional</span>
                     </div>
@@ -131,7 +131,7 @@
                 <div class="reveal stagger-5 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
                     data-category="professional">
                     <div class="flex items-start justify-between mb-4">
-                        <img src="https://media.istockphoto.com/id/2219453779/photo/young-professional-sitting-at-a-desk-with-a-laptop-in-an-office.jpg?s=612x612&w=0&k=20&c=-6Bmfh-lpM0dHvJ8hFHbApWFRmh-wOpJ4E4AGFq6uNw="
+                        <img src="https://shoppable.ph/wp-content/uploads/2024/02/how-to-find-the-right-supplier-in-the-philippines-shoppable.jpg"
                             alt="Business professional" class="w-12 h-12 rounded-xl object-cover">
                         <span class="badge badge-success">Professional</span>
                     </div>

@@ -29,7 +29,7 @@
                         <div class="relative flex-shrink-0 z-10">
                             <div
                                 class="rounded-xl overflow-hidden ring-1 ring-slate-200 transition-all duration-500 group-hover:ring-amber-300 group-hover:shadow-[0_10px_25px_rgba(212,175,55,0.22)]">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                <img src="https://media.philstar.com/photos/2024/05/28/8_2024-05-28_22-03-41.jpg"
                                     alt="Business leader"
                                     class="w-14 h-14 rounded-xl object-cover transition-all duration-500 group-hover:scale-110">
                             </div>
@@ -60,7 +60,7 @@
                         <div class="relative flex-shrink-0 z-10">
                             <div
                                 class="rounded-xl overflow-hidden ring-1 ring-slate-200 transition-all duration-500 group-hover:ring-amber-300 group-hover:shadow-[0_10px_25px_rgba(212,175,55,0.22)]">
-                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                <img src="https://media.istockphoto.com/id/1662634585/photo/portrait-of-middle-aged-asian-man-posing-on-blue-background.jpg?s=612x612&w=0&k=20&c=LpDZ_N_Urs5ME_J89KuUgk3pR9xH7dM8YCFIDIV8T2w="
                                     alt="Experienced professional"
                                     class="w-14 h-14 rounded-xl object-cover transition-all duration-500 group-hover:scale-110">
                             </div>
@@ -91,7 +91,7 @@
                         <div class="relative flex-shrink-0 z-10">
                             <div
                                 class="rounded-xl overflow-hidden ring-1 ring-slate-200 transition-all duration-500 group-hover:ring-amber-300 group-hover:shadow-[0_10px_25px_rgba(212,175,55,0.22)]">
-                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGWXVRi4e4CW1I70R7RNAOKPYnWHsvetkU4Zq6-C6opE7gU8Kb8jZa6F9ZCC31qY029NVohcDHJCEavlp5WOvHH3E6nyJzH9pyVPDbOkoGWif3Ntw-wKLtgjb4Gww5KAjkIg5JggMBivvqj0q-OXtVS2cD1b81rw-Prs_wWG-rLF9Cv5cT0NHGTw/s1920/Corporate%20Team%20Building%20Facilitators.png"
                                     alt="Team collaboration"
                                     class="w-14 h-14 rounded-xl object-cover transition-all duration-500 group-hover:scale-110">
                             </div>
@@ -122,7 +122,7 @@
                         <div class="relative flex-shrink-0 z-10">
                             <div
                                 class="rounded-xl overflow-hidden ring-1 ring-slate-200 transition-all duration-500 group-hover:ring-amber-300 group-hover:shadow-[0_10px_25px_rgba(212,175,55,0.22)]">
-                                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                <img src="https://tzuchi.org.ph/assets/news-page/images/8a981733-3af2-4e80-8721-aad7f9b46318.jpg"
                                     alt="Quality assurance"
                                     class="w-14 h-14 rounded-xl object-cover transition-all duration-500 group-hover:scale-110">
                             </div>
@@ -150,7 +150,7 @@
                             class="absolute inset-0 rounded-2xl bg-gradient-to-br from-amber-100/0 via-amber-100/0 to-yellow-200/20 opacity-0 transition-all duration-500 group-hover:opacity-100 z-10">
                         </div>
 
-                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        <img src="https://pidswebs.pids.gov.ph/CDN/GALLERY/DSC_6934.JPG"
                             alt="Team collaboration meeting"
                             class="w-full h-[500px] object-cover transition-all duration-700 group-hover:scale-105">
 
