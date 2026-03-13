@@ -71,63 +71,121 @@
                     </div>
                 </div>
 
-                <form id="inquiry-form" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                <form id="inquiry-form" action="{{ route('inquiry.store') }}" method="POST"
+                    class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                    @csrf
+
+                    @if(session('success'))
+                    <div class="mb-6 rounded-lg bg-green-100 border border-green-200 text-green-700 px-4 py-3">
+                        {{ session('success') }}
+                    </div>
+                    @endif
+
+                    @if ($errors->any())
+                    <div class="mb-6 rounded-lg bg-red-100 border border-red-200 text-red-700 px-4 py-3">
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
+
                     <div class="grid sm:grid-cols-2 gap-6 mb-6">
                         <div>
-                            <label for="firstName" class="block text-sm font-medium text-slate-700 mb-2">First
-                                Name</label>
-                            <input type="text" id="firstName" name="firstName"
-                                class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
-                                placeholder="Juan" required>
+                            <label for="firstName" class="block text-sm font-medium text-slate-700 mb-2">First Name</label>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                value="{{ old('firstName') }}"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 @error('firstName') border-red-500 @else border-slate-300 @enderror"
+                                placeholder="Juan"
+                                required>
+                            @error('firstName')
+                            <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
+                            @enderror
                         </div>
+
                         <div>
-                            <label for="lastName" class="block text-sm font-medium text-slate-700 mb-2">Last
-                                Name</label>
-                            <input type="text" id="lastName" name="lastName"
-                                class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
-                                placeholder="Dela Cruz" required>
+                            <label for="lastName" class="block text-sm font-medium text-slate-700 mb-2">Last Name</label>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                value="{{ old('lastName') }}"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 @error('lastName') border-red-500 @else border-slate-300 @enderror"
+                                placeholder="Dela Cruz"
+                                required>
+                            @error('lastName')
+                            <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
+                            @enderror
                         </div>
                     </div>
 
                     <div class="grid sm:grid-cols-2 gap-6 mb-6">
                         <div>
-                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email
-                                Address</label>
-                            <input type="email" id="email" name="email"
-                                class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
-                                placeholder="juan@example.com" required>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value="{{ old('email') }}"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 @error('email') border-red-500 @else border-slate-300 @enderror"
+                                placeholder="juan@example.com"
+                                required>
+                            @error('email')
+                            <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
+                            @enderror
                         </div>
+
                         <div>
-                            <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Phone
-                                Number</label>
-                            <input type="tel" id="phone" name="phone"
-                                class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
+                            <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                value="{{ old('phone') }}"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 @error('phone') border-red-500 @else border-slate-300 @enderror"
                                 placeholder="+63 912 345 6789">
+                            @error('phone')
+                            <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
+                            @enderror
                         </div>
                     </div>
 
                     <div class="mb-6">
-                        <label for="position" class="block text-sm font-medium text-slate-700 mb-2">Position
-                            Interested In</label>
-                        <select id="position" name="position"
-                            class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 bg-white">
+                        <label for="position" class="block text-sm font-medium text-slate-700 mb-2">Position Interested In</label>
+                        <select
+                            id="position"
+                            name="position"
+                            class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 bg-white @error('position') border-red-500 @else border-slate-300 @enderror">
                             <option value="">Select a position...</option>
-                            <option value="Nursing Specialist">Female Nursing Specialist</option>
-                            <option value="Tile Worker">Tile Worker / Tile Setter</option>
-                            <option value="Electrician">Building Electrician</option>
-                            <option value="IT Support">IT Support Technician</option>
-                            <option value="Draftsman">Architectural Draftsman</option>
-                            <option value="Purchase Rep">Purchase Representative</option>
-                            <option value="Other">Other / General Inquiry</option>
+                            <option value="Nursing Specialist" {{ old('position') == 'Nursing Specialist' ? 'selected' : '' }}>Female Nursing Specialist</option>
+                            <option value="Tile Worker" {{ old('position') == 'Tile Worker' ? 'selected' : '' }}>Tile Worker / Tile Setter</option>
+                            <option value="Electrician" {{ old('position') == 'Electrician' ? 'selected' : '' }}>Building Electrician</option>
+                            <option value="IT Support" {{ old('position') == 'IT Support' ? 'selected' : '' }}>IT Support Technician</option>
+                            <option value="Draftsman" {{ old('position') == 'Draftsman' ? 'selected' : '' }}>Architectural Draftsman</option>
+                            <option value="Purchase Rep" {{ old('position') == 'Purchase Rep' ? 'selected' : '' }}>Purchase Representative</option>
+                            <option value="Other" {{ old('position') == 'Other' ? 'selected' : '' }}>Other / General Inquiry</option>
                         </select>
+                        @error('position')
+                        <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <div class="mb-6">
-                        <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Your
-                            Message</label>
-                        <textarea id="message" name="message" rows="4"
-                            class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
-                            placeholder="Tell us about your experience and inquiries..." required></textarea>
+                        <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 @error('message') border-red-500 @else border-slate-300 @enderror"
+                            placeholder="Tell us about your experience and inquiries..."
+                            required>{{ old('message') }}</textarea>
+                        @error('message')
+                        <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <button type="submit"
@@ -138,8 +196,6 @@
                                 d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </button>
-
-                    <p id="form-status" class="text-center mt-4 text-sm hidden"></p>
                 </form>
             </div>
 

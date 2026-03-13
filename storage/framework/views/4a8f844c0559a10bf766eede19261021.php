@@ -71,63 +71,206 @@
                     </div>
                 </div>
 
-                <form id="inquiry-form" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                <form id="inquiry-form" action="<?php echo e(route('inquiry.store')); ?>" method="POST"
+                    class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                    <?php echo csrf_field(); ?>
+
+                    <?php if(session('success')): ?>
+                    <div class="mb-6 rounded-lg bg-green-100 border border-green-200 text-green-700 px-4 py-3">
+                        <?php echo e(session('success')); ?>
+
+                    </div>
+                    <?php endif; ?>
+
+                    <?php if($errors->any()): ?>
+                    <div class="mb-6 rounded-lg bg-red-100 border border-red-200 text-red-700 px-4 py-3">
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <li><?php echo e($error); ?></li>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        </ul>
+                    </div>
+                    <?php endif; ?>
+
                     <div class="grid sm:grid-cols-2 gap-6 mb-6">
                         <div>
-                            <label for="firstName" class="block text-sm font-medium text-slate-700 mb-2">First
-                                Name</label>
-                            <input type="text" id="firstName" name="firstName"
-                                class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
-                                placeholder="Juan" required>
+                            <label for="firstName" class="block text-sm font-medium text-slate-700 mb-2">First Name</label>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                value="<?php echo e(old('firstName')); ?>"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 <?php $__errorArgs = ['firstName'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> border-red-500 <?php else: ?> border-slate-300 <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
+                                placeholder="Juan"
+                                required>
+                            <?php $__errorArgs = ['firstName'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                            <p class="text-red-500 text-sm mt-2"><?php echo e($message); ?></p>
+                            <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                         </div>
+
                         <div>
-                            <label for="lastName" class="block text-sm font-medium text-slate-700 mb-2">Last
-                                Name</label>
-                            <input type="text" id="lastName" name="lastName"
-                                class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
-                                placeholder="Dela Cruz" required>
+                            <label for="lastName" class="block text-sm font-medium text-slate-700 mb-2">Last Name</label>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                value="<?php echo e(old('lastName')); ?>"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 <?php $__errorArgs = ['lastName'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> border-red-500 <?php else: ?> border-slate-300 <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
+                                placeholder="Dela Cruz"
+                                required>
+                            <?php $__errorArgs = ['lastName'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                            <p class="text-red-500 text-sm mt-2"><?php echo e($message); ?></p>
+                            <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                         </div>
                     </div>
 
                     <div class="grid sm:grid-cols-2 gap-6 mb-6">
                         <div>
-                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email
-                                Address</label>
-                            <input type="email" id="email" name="email"
-                                class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
-                                placeholder="juan@example.com" required>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value="<?php echo e(old('email')); ?>"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> border-red-500 <?php else: ?> border-slate-300 <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
+                                placeholder="juan@example.com"
+                                required>
+                            <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                            <p class="text-red-500 text-sm mt-2"><?php echo e($message); ?></p>
+                            <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                         </div>
+
                         <div>
-                            <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Phone
-                                Number</label>
-                            <input type="tel" id="phone" name="phone"
-                                class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
+                            <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                value="<?php echo e(old('phone')); ?>"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 <?php $__errorArgs = ['phone'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> border-red-500 <?php else: ?> border-slate-300 <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
                                 placeholder="+63 912 345 6789">
+                            <?php $__errorArgs = ['phone'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                            <p class="text-red-500 text-sm mt-2"><?php echo e($message); ?></p>
+                            <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                         </div>
                     </div>
 
                     <div class="mb-6">
-                        <label for="position" class="block text-sm font-medium text-slate-700 mb-2">Position
-                            Interested In</label>
-                        <select id="position" name="position"
-                            class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 bg-white">
+                        <label for="position" class="block text-sm font-medium text-slate-700 mb-2">Position Interested In</label>
+                        <select
+                            id="position"
+                            name="position"
+                            class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 bg-white <?php $__errorArgs = ['position'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> border-red-500 <?php else: ?> border-slate-300 <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>">
                             <option value="">Select a position...</option>
-                            <option value="Nursing Specialist">Female Nursing Specialist</option>
-                            <option value="Tile Worker">Tile Worker / Tile Setter</option>
-                            <option value="Electrician">Building Electrician</option>
-                            <option value="IT Support">IT Support Technician</option>
-                            <option value="Draftsman">Architectural Draftsman</option>
-                            <option value="Purchase Rep">Purchase Representative</option>
-                            <option value="Other">Other / General Inquiry</option>
+                            <option value="Nursing Specialist" <?php echo e(old('position') == 'Nursing Specialist' ? 'selected' : ''); ?>>Female Nursing Specialist</option>
+                            <option value="Tile Worker" <?php echo e(old('position') == 'Tile Worker' ? 'selected' : ''); ?>>Tile Worker / Tile Setter</option>
+                            <option value="Electrician" <?php echo e(old('position') == 'Electrician' ? 'selected' : ''); ?>>Building Electrician</option>
+                            <option value="IT Support" <?php echo e(old('position') == 'IT Support' ? 'selected' : ''); ?>>IT Support Technician</option>
+                            <option value="Draftsman" <?php echo e(old('position') == 'Draftsman' ? 'selected' : ''); ?>>Architectural Draftsman</option>
+                            <option value="Purchase Rep" <?php echo e(old('position') == 'Purchase Rep' ? 'selected' : ''); ?>>Purchase Representative</option>
+                            <option value="Other" <?php echo e(old('position') == 'Other' ? 'selected' : ''); ?>>Other / General Inquiry</option>
                         </select>
+                        <?php $__errorArgs = ['position'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                        <p class="text-red-500 text-sm mt-2"><?php echo e($message); ?></p>
+                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                     </div>
 
                     <div class="mb-6">
-                        <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Your
-                            Message</label>
-                        <textarea id="message" name="message" rows="4"
-                            class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700"
-                            placeholder="Tell us about your experience and inquiries..." required></textarea>
+                        <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition text-slate-700 <?php $__errorArgs = ['message'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> border-red-500 <?php else: ?> border-slate-300 <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>"
+                            placeholder="Tell us about your experience and inquiries..."
+                            required><?php echo e(old('message')); ?></textarea>
+                        <?php $__errorArgs = ['message'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                        <p class="text-red-500 text-sm mt-2"><?php echo e($message); ?></p>
+                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                     </div>
 
                     <button type="submit"
@@ -138,8 +281,6 @@
                                 d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </button>
-
-                    <p id="form-status" class="text-center mt-4 text-sm hidden"></p>
                 </form>
             </div>
 
