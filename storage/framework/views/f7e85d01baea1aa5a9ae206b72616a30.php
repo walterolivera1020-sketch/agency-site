@@ -1,7 +1,16 @@
 <aside class="w-64 bg-gray-900 text-white min-h-screen p-6 hidden md:block">
-    <div class="mb-10">
-        <h2 class="text-2xl font-bold">Joseline</h2>
-        <p class="text-sm text-gray-400 mt-1">International Manpower Corporation</p>
+    <div class="mb-10 flex items-center gap-3">
+
+        <img
+            src="<?php echo e(asset('images/Logo3.png')); ?>"
+            alt="Joseline Logo"
+            class="w-10 h-10 object-contain">
+
+        <div>
+            <h2 class="text-2xl font-bold">Joseline</h2>
+            <p class="text-sm text-gray-400">International Manpower Corporation</p>
+        </div>
+
     </div>
 
     <nav class="space-y-2">

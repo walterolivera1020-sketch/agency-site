@@ -19,7 +19,7 @@
                 class="w-10 h-10 rounded-full object-cover border-2 border-gray-200">
 
             <div>
-                <p class="text-sm font-semibold text-gray-800">Admin User</p>
+                <p class="text-sm font-semibold text-gray-800">Walter Olivera</p>
                 <p class="text-xs text-gray-500">Administrator</p>
             </div>
         </div>
