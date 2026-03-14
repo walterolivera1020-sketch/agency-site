@@ -1,7 +1,7 @@
 <aside class="w-64 bg-gray-900 text-white min-h-screen p-6 hidden md:block">
     <div class="mb-10">
-        <h2 class="text-2xl font-bold">Admin Panel</h2>
-        <p class="text-sm text-gray-400 mt-1">Management System</p>
+        <h2 class="text-2xl font-bold">Joseline</h2>
+        <p class="text-sm text-gray-400 mt-1">International Manpower Corporation</p>
     </div>
 
     <nav class="space-y-2">

@@ -1,6 +1,6 @@
-@extends('layouts.auth')
 
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 <div class="bg-white shadow-lg rounded-2xl p-8">
     <div class="text-center mb-8">
         <h1 class="text-3xl font-bold text-gray-800">Admin Login</h1>
@@ -8,7 +8,7 @@
     </div>
 
     <form action="#" method="POST" class="space-y-5">
-        @csrf
+        <?php echo csrf_field(); ?>
 
         <div>
             <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
@@ -49,4 +49,5 @@
         </button>
     </form>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.auth', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\Users\user\agency-site\resources\views/auth/login.blade.php ENDPATH**/ ?>

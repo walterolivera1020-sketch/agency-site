@@ -179,7 +179,7 @@
                      <!-- Floating Badge -->
                      <div
                          class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 border border-gray-200 floating-badge">
-                         <img src="<?php echo e(asset('images/perfect.png')); ?>" alt="Trusted Partner"
+                         <img src="<?php echo e(asset('images/walter.png')); ?>" alt="Trusted Partner"
                              class="w-12 h-12 rounded-lg object-cover">
                          <div>
                              <p class="font-bold text-primary-950">Trusted Partner</p>
