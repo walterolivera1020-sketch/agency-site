@@ -6,19 +6,15 @@
     <title>{{ $title ?? 'Admin Dashboard' }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-slate-100 text-slate-800">
 
     <div class="min-h-screen flex">
-        <!-- Sidebar -->
         @include('admin.partials.sidebar')
 
-        <!-- Main Content -->
-        <div class="flex-1 flex flex-col">
-            <!-- Navbar -->
+        <div class="flex-1 min-w-0 flex flex-col">
             @include('admin.partials.navbar')
 
-            <!-- Page Content -->
-            <main class="p-6">
+            <main class="p-4 sm:p-6 lg:p-8">
                 @yield('content')
             </main>
         </div>

@@ -6,19 +6,15 @@
     <title><?php echo e($title ?? 'Admin Dashboard'); ?></title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-slate-100 text-slate-800">
 
     <div class="min-h-screen flex">
-        <!-- Sidebar -->
         <?php echo $__env->make('admin.partials.sidebar', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
-        <!-- Main Content -->
-        <div class="flex-1 flex flex-col">
-            <!-- Navbar -->
+        <div class="flex-1 min-w-0 flex flex-col">
             <?php echo $__env->make('admin.partials.navbar', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
-            <!-- Page Content -->
-            <main class="p-6">
+            <main class="p-4 sm:p-6 lg:p-8">
                 <?php echo $__env->yieldContent('content'); ?>
             </main>
         </div>
