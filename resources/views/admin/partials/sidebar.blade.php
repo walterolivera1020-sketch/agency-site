@@ -1,0 +1,53 @@
+<aside class="w-64 bg-gray-900 text-white min-h-screen p-6 hidden md:block">
+    <div class="mb-10">
+        <h2 class="text-2xl font-bold">Admin Panel</h2>
+        <p class="text-sm text-gray-400 mt-1">Management System</p>
+    </div>
+
+    <nav class="space-y-2">
+        <a href="{{ route('admin.dashboard') }}"
+           class="flex items-center gap-3 px-4 py-3 rounded-xl bg-indigo-600 text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7m-9 2v8m0-8H5m7 0h7" />
+            </svg>
+            Dashboard
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.121 17.804A9 9 0 1118.364 4.56a9 9 0 01-13.243 13.243z" />
+            </svg>
+            Users
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 17v-6h13v6M9 5h13v4H9V5zM2 5h5v12H2V5z" />
+            </svg>
+            Jobs
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10m-11 9h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v11a2 2 0 002 2z" />
+            </svg>
+            Applications
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 16l4-4m0 0l-4-4m4 4H7" />
+            </svg>
+            Logout
+        </a>
+    </nav>
+</aside>
