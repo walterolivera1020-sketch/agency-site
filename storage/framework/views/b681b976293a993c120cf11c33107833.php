@@ -1,15 +1,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="x1SxYg8xo-qy6lk0tYd7IypQeUxOb1FF1GkkNjELObk" />
+
 <title>Joseline International Manpower Corporation | Trusted Overseas Recruitment</title>
 
+<meta
+  name="description"
+  content="Joseline International Manpower Corporation is a trusted overseas recruitment agency in the Philippines."
+>
+<link rel="canonical" href="https://joselinemanpowercorp.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Joseline International Manpower Corporation | Trusted Overseas Recruitment">
+<meta property="og:description" content="Trusted overseas recruitment support for Filipino applicants.">
+<meta property="og:url" content="https://joselinemanpowercorp.com/">
+<meta property="og:image" content="https://joselinemanpowercorp.com/images/JOSELINE1.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Joseline International Manpower Corporation | Trusted Overseas Recruitment">
+<meta name="twitter:description" content="Trusted overseas recruitment support for Filipino applicants.">
+<meta name="twitter:image" content="https://joselinemanpowercorp.com/images/JOSELINE1.png">
+
 <script src="https://cdn.tailwindcss.com"></script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+>
 <script>
     tailwind.config = {
         theme: {
