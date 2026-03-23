@@ -42,7 +42,7 @@
                 <div class="reveal stagger-4 flex flex-wrap justify-center lg:justify-start gap-6">
 
                     <!-- Item 1 -->
-                    <!-- Item 1 -->
+                
                     <div
                         class="trust-badge group flex items-center space-x-3 px-3 py-2 rounded-xl transition-all duration-300 hover:bg-white/10 hover:-translate-y-1">
 

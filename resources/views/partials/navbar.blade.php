@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between h-20">
             <a href="#home" class="flex items-center space-x-3 group">
                 <div class="flex items-center justify-center transform group-hover:scale-105 transition-transform">
-                    <img src="{{ asset('images/JOJO.png') }}" alt="Joseline International Manpower Corporation Logo"
+                    <img src="{{ asset('images/Logo3.png') }}" alt="Joseline International Manpower Corporation Logo"
                         class="h-14 w-auto object-contain">
                 </div>
                 <div class="hidden sm:block">

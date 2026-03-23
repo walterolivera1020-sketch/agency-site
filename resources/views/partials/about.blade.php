@@ -142,8 +142,8 @@
                          </div>
 
                          <div
-                             class="relative w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-yellow-100 group-hover:scale-110 group-hover:shadow-md">
-                             <svg class="w-5 h-5 text-green-600 transition-all duration-300 group-hover:text-yellow-600 group-hover:scale-110"
+                             class="relative w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-yellow-100 group-hover:scale-110 group-hover:shadow-md">
+                             <svg class="w-5 h-5 text-teal-600 transition-all duration-300 group-hover:text-yellow-600 group-hover:scale-110"
                                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                      d="M5 13l4 4L19 7" />
@@ -179,7 +179,7 @@
                      <!-- Floating Badge -->
                      <div
                          class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 border border-gray-200 floating-badge">
-                         <img src="{{ asset('images/perfect.png') }}" alt="Trusted Partner"
+                         <img src="{{ asset('images/walter.png') }}" alt="Trusted Partner"
                              class="w-12 h-12 rounded-lg object-cover">
                          <div>
                              <p class="font-bold text-primary-950">Trusted Partner</p>

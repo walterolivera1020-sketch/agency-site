@@ -229,12 +229,12 @@
                         <div class="flex items-center space-x-4">
                             <div
                                 class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <img src="https://cdn-icons-png.flaticon.com/128/10346/10346885.png"
-                                    alt="Office Hours Icon" class="w-6 h-6 object-contain">
+                                <img src="https://cdn-icons-png.flaticon.com/128/16076/16076069.png"
+                                    alt="Phone Icon" class="w-6 h-6 object-contain">
                             </div>
                             <div>
-                                <p class="text-sm text-slate-500">Office Hours</p>
-                                <p class="text-slate-900 font-medium">Mon-Fri: 8AM-5PM, Sat: 9AM-12PM</p>
+                                <p class="text-sm text-slate-500">Phone</p>
+                                <p class="text-slate-900 font-medium">+63 950-691-1803</p>
                             </div>
                         </div>
                     </div>
